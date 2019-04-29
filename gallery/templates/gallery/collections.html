@@ -1,0 +1,37 @@
+
+{% extends 'gallery/base.html' %}
+
+{% load static %}
+
+
+{% block body_class %}page-{{ page }}{% endblock body_class %}
+
+
+{% block content %}
+
+<div id="collections-header" class="tp-background-lightgrey">
+  <div class="uk-container uk-container-small uk-text-center uk-padding">
+    <h1>Collections</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br/>
+     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+  </div>
+</div>
+
+<div class="uk-container uk-container-small">
+	<div class="gallery-section">
+		<h2 class="gallery-section-header">Social Media</h2>
+	  <div class="collection-gallery uk-child-width-1-4 uk-grid-small" data-gallery="Social Media" uk-grid></div>
+	</div>
+	<div class="gallery-section">
+		<h2 class="gallery-section-header">Chart Types</h2>
+		<div class="collection-gallery uk-child-width-1-4 uk-grid-small" data-gallery="Chart Types" uk-grid></div>
+	</div>
+</div>
+
+{% endblock content %}
+
+    
+{% block extra_footer_js %}
+  <script src="{% static '/js/galleryView.js' %}"></script>
+  <script src="{% static '/js/collections.js' %}"></script>
+{% endblock extra_footer_js %}

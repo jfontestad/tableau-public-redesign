@@ -1,0 +1,84 @@
+
+
+{% extends 'gallery/base.html' %}
+
+{% load static %}
+
+
+{% block body_class %}page-{{ page }}{% endblock body_class %}
+
+
+{% block content %}
+
+<div class="uk-grid-collapse" uk-grid>
+  
+  <div class="uk-width-1-1 uk-width-expand@l" uk-height-viewport="offset-top: true">
+    <div class="tp-background-lightgrey">
+      <a id="vis-back" href="javascript:history.back()"><span uk-icon="icon: chevron-left; ratio: 0.8"></span><span id="vis-back-label">Back</span></a>
+      <main id="tp-d-content" class="uk-padding" role="main"></main>
+    </div>
+  </div>
+
+  <div id="d-sidebar-container">
+    <div>
+
+      <div id="d-sidebar" class="uk-margin-remove uk-child-width-1-2 uk-child-width-1-1@l" uk-grid="margin:0">
+        <div class="d-sidebar-block">
+          <h1 id="d-vis-title"></h1>
+          <div id="d-sidebar-stats">
+            <div class="d-sidebar-stat">
+              <i class="fas fa-eye"></i> <span id="d-vis-views"></span>
+            </div>
+            <div class="d-sidebar-stat">
+              <i class="far fa-thumbs-up"></i> xx
+            </div>
+            <div class="d-sidebar-stat">
+              <i class="far fa-clock"></i> <span id="d-vis-date"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-sidebar-block" id="d-vis-description-container">
+          <p id="d-vis-description"></p>
+          <p class="d-vis-caption"></p>
+        </div>
+
+        <div class="d-sidebar-block" id="d-vis-permalink"></div>
+
+        <div class="d-sidebar-block">
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+              <div class="uk-border-circle" id="d-profile-avatar"></div>
+            </div>
+            <div class="uk-width-expand">
+              <h3 id="d-profile-name"></h3>
+              <div id="d-profile-location" class="text-meta">London, United Kingdom</div>
+              <a href="" class="tp-button tp-button-primary tp-button-sm">Follow</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-sidebar-block">
+          <ul id="d-sidebar-labels" class="plain-list">
+            <li class="tp-label">Tableau Zen Master</li>
+            <li class="tp-label">Viz of the Day</li>
+          </ul>
+        </div>
+
+        <div class="d-sidebar-block">
+          <a href="" class="tp-button tp-button-primary tp-button-m tp-button-full-width"><i class="fas fa-thumbs-up uk-margin-small-right"></i> Appreciate viz</a>
+          <a href="" class="tp-button tp-button-secondary tp-button-m tp-button-full-width"><i class="fas fa-star uk-margin-small-right"></i> Bookmark viz</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% endblock content %}
+
+    
+{% block extra_footer_js %}
+  <script src="{% static '/js/vis.js' %}"></script>
+{% endblock extra_footer_js %}

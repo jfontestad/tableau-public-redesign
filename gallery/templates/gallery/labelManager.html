@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="icon" href="{% static '/images/sbs-icon.ico' %}">-->
+
+    <title>Label Manager</title>
+
+    {% block head_css %}
+      <link href="{% static '/css/style.css' %}" rel="stylesheet">
+    {% endblock head_css %}
+  </head>
+  <body id="label-manager">
+
+    <div class="uk-margin-top uk-padding">
+      <div uk-grid>
+        <div class="uk-width-1-2">
+          <h1 class="uk-margin-bottom">Vis Label Manager <button class="uk-button" id="label-manager-save">Save</button></h1>
+          <div id="label-manager-chart-types" class="uk-child-width-1-4 uk-grid-small" uk-grid></div>
+          <hr/>
+          <div class="uk-child-width-1-4 uk-grid-small" uk-grid>
+            <div><div id="label-manager-background-image" class="label-manager-other">Background Image</div></div>
+            <div><div id="label-manager-interactive-filter" class="label-manager-other">Interactive Filter</div></div>
+            <div><div id="label-manager-outstanding" class="label-manager-other">Outstanding</div></div>
+            <div><div id="label-manager-image-missing" class="label-manager-other label-manager-secondary-action">Image missing</div></div>
+            <div><div id="label-manager-unknown" class="label-manager-other label-manager-secondary-action">I don't know</div></div>
+          </div>
+        </div>
+        <div class="uk-width-1-2" id="label-manager-image-container">
+          <img src="" id="label-manager-image"/>
+        </div>
+      </div>
+    </div>
+
+    {% block footer_js %}
+      <script src="{% static '/js/libs.js' %}"></script>
+      <script src="{% static '/js/helper.js' %}"></script>
+      <script src="{% static '/js/jquery-ui.min.js' %}"></script>
+      <script src="{% static '/js/labelManager.js' %}"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    {% endblock footer_js %}
+  
+  </body>
+</html>

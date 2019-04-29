@@ -1,0 +1,86 @@
+{% load static %}
+
+{% block primary_filter %}
+
+<div id="tp-filter">
+  <div class="sidebar-accordion-block-header">
+    <span class="sidebar-block-title">REFINE BY</span>
+  </div>
+
+  <ul class="tp-filter-accordion" uk-accordion>
+    <li id="tp-filter-chart-types">
+      <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+        <span class="fas fa-chart-area uk-margin-small-right"></span>
+        <span class="tp-filter-accordion-title-inner">Chart types</span>
+      </a>
+      <div class="uk-accordion-content tp-filter-accordion-content">
+        <div class="uk-child-width-1-3 uk-grid-small" uk-grid>
+          <div><img src="{% static '/images/tp-chart-type_bar.png' %}" data-chart-type="barchart,columnchart" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_line.png' %}" data-chart-type="linechart" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_area.png' %}" data-chart-type="areachart" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_pie.png' %}" data-chart-type="piechart,donutchart" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_scatter.png' %}" data-chart-type="scatterplot" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_map.png' %}" data-chart-type="map" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_table.png' %}" data-chart-type="table" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_treemap.png' %}" data-chart-type="treemap" class="tp-filter-chart-type-image active" /></div>
+          <div><img src="{% static '/images/tp-chart-type_bubble.png' %}" data-chart-type="bubblechart" class="tp-filter-chart-type-image active" /></div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+        <span class="far fa-calendar-alt uk-margin-small-right"></span>
+        <span class="tp-filter-accordion-title-inner fake">Upload date</span>
+      </a>
+      <div class="uk-accordion-content tp-filter-accordion-content">upload date</div>
+    </li>
+    <li>
+      <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+        <span class="far fa-thumbs-up uk-margin-small-right"></span>
+        <span class="tp-filter-accordion-title-inner fake">Number of likes and views</span>
+      </a>
+      <div class="uk-accordion-content tp-filter-accordion-content">likes and views</div>
+    </li>
+    <li>
+      <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+        <span class="fas fa-sliders-h uk-margin-small-right"></span>
+        <span class="tp-filter-accordion-title-inner fake">Visualization features</span>
+      </a>
+      <div class="uk-accordion-content tp-filter-accordion-content">vis features</div>
+    </li>
+    <li>
+      <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+        <span class="fas fa-bookmark uk-margin-small-right"></span>
+        <span class="tp-filter-accordion-title-inner fake">Labels</span>
+      </a>
+      <div class="uk-accordion-content tp-filter-accordion-content">labels</div>
+    </li>
+    <li>
+      <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+        <span class="fas fa-bars uk-margin-small-right"></span>
+        <span class="tp-filter-accordion-title-inner fake">Other</span>
+      </a>
+      <div class="uk-accordion-content tp-filter-accordion-content">
+        <div class="uk-margin-small">
+          <label>
+            <input class="uk-checkbox" type="checkbox" checked>
+            <span class="checkbox-label uk-margin-small-left">Downloadable data</span>
+          </label>
+        </div>
+        <div class="uk-margin-small">
+          <label>
+            <input class="uk-checkbox" type="checkbox" checked>
+            <span class="checkbox-label uk-margin-small-left">Live data</span>
+          </label>
+        </div>
+        <div class="uk-margin-small">
+          <label>
+            <input class="uk-checkbox" type="checkbox" checked>
+            <span class="checkbox-label uk-margin-small-left">Works on mobile devices</span>
+          </label>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+{% endblock primary_filter %}

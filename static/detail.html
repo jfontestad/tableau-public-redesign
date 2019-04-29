@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="<!-- static 'sbs/images/sbs-icon.ico' -->">
+
+    <title>Tableau Public</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div uk-sticky>
+        <nav class="uk-navbar-container uk-navbar-transparent tp-navbar-container-first uk-visible@m" uk-navbar="dropbar: true">
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a>
+                    Tableau Products &amp; Services 
+                    <span class="uk-margin-tiny-left" uk-icon="icon: triangle-down; ratio: 0.7"></span>
+                  </a>
+                  <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
+                    <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Products</li>
+                          <li><a href="#">Tableau Desktop</a></li>
+                          <li><a href="#">Tableau Server</a></li>
+                          <li><a href="#">Tableau Online</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Solutions</li>
+                          <li><a href="#">Industries</a></li>
+                          <li><a href="#">Departments</a></li>
+                          <li><a href="#">Technology</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">About</li>
+                          <li><a href="#">Mission</a></li>
+                          <li><a href="#">Leadership</a></li>
+                          <li><a href="#">Newsroom</a></li>
+                          <li><a href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="tp-navbar-promoted">
+                    Placeholder for the latest <span class="tp-navbar-promoted-highlighted">news</span> 
+                  </a>
+                </li>
+              </ul>
+              
+              
+            </div>
+            <div class="uk-navbar-right">
+              <a class="uk-navbar-item">Sign in</a>
+            </div>
+        </nav>
+        <nav class="uk-navbar-container uk-navbar-transparent tp-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+            <a class="uk-navbar-item uk-logo uk-visible@m" href="/sbs/"><img src="images/tp-logo-col.png" title="Tableau Public" /></a>
+          </div>
+          <div class="uk-navbar-center uk-hidden@m">
+            <a class="uk-navbar-item uk-logo" href="/sbs/"><img src="images/tp-logo-col.png" title="Tableau Public" /></a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li>
+                  <a href="#">Discover</a>
+                  <div class="uk-navbar-dropdown" uk-dropdown="offset: 0; pos: bottom-justify">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Most popular</span>
+                            <span class="tp-nav-dropdown-desc">Trending and most viewed</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Topics</span>
+                            <span class="tp-nav-dropdown-desc">Explore Tableau visualizations by topic</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Authors</span>
+                            <span class="tp-nav-dropdown-desc">Follow and support Tableau experts</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Around the globe</span>
+                            <span class="tp-nav-dropdown-desc">Browse through Tableau Public geographically</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Surprise me!</span>
+                            <span class="tp-nav-dropdown-desc">Recommended visualizations</span>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">App</a>
+                </li>
+                <li>
+                  <a href="#">Resources</a>
+                  <div class="uk-navbar-dropdown" uk-dropdown="offset: 0; pos: bottom-justify">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Videos</span>
+                            <span class="tp-nav-dropdown-desc">Our how-to videos help get you started, or take you to the next level</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Live training</span>
+                            <span class="tp-nav-dropdown-desc">Sign up for a free webinar</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Sample data</span>
+                            <span class="tp-nav-dropdown-desc">Well-structured datasets from various domains</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Tableau Community</span>
+                            <span class="tp-nav-dropdown-desc">Learn, connect, and enjoy Tableau with over 150,000 passionate users</span>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <!--<li>
+                  <a href="#" class="tp-nav-login"><span class="tp-nav-login-inner">Log In</span></a>
+                </li>-->
+            </ul>
+            <a href="#" class="tp-search-toggle" uk-toggle="target: #tp-search, .tp-curtain; animation: uk-animation-fade">
+              <span class="uk-icon uk-margin-small-right" uk-icon="icon: search; ratio: 1.3"></span>
+            </a>
+          </div>
+
+          <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header">Discover Visualizations</li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bolt"></span> Most popular</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Topics</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> Authors</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Around the globe</a></li>
+                <li class="uk-nav-header">Tableau Public</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Download app</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="uk-parent">
+                  <a href="#">Resources</a>
+                  <ul class="uk-nav-sub">
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Live training</a></li>
+                    <li><a href="#">Sample data</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="tp-search-container" id="tp-search" aria-hidden="true" hidden>
+        
+        <div class="uk-container uk-container-small">
+          <div class="uk-padding uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+            <div class="uk-width-expand uk-first-column">
+              <form class="uk-search uk-search-navbar uk-width-1-1">
+                <input class="uk-form-large uk-search-input" type="search" placeholder="Search Tableau Public ..." autofocus="">
+                <div class="tp-search-suggest" uk-dropdown="offset: 40">
+                  <ul class="uk-nav uk-nav-search">
+                    <li><a href="#">first result</a></li>
+                    <li><a href="#">second item</a></li>
+                    <li><a href="#">third item</a></li>
+                    <li><a href="#">fourth item</a></li>
+                    <li><a href="#">fifth item</a></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+            <div class="uk-width-auto">
+              <a href="#" uk-toggle="target: #tp-search, .tp-curtain; animation: uk-animation-fade" uk-icon="icon: close"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="uk-grid-collapse" uk-grid>
+      <div class="uk-width-1-1 uk-width-expand@l" uk-height-viewport="offset-top: true">
+        
+        <div class="tp-background-lightgrey">
+          <main id="tp-d-content" class="uk-padding" role="main">
+            <!-- Main content -->
+            <!--<div style="height: 800px; max-width: 900px; background: #ccc;">-->
+            <div style="position: relative;">
+              <div class='tableauPlaceholder' id='viz1522290522252' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RacetoAlaska&#47;RacetoAlaska&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RacetoAlaska&#47;RacetoAlaska' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RacetoAlaska&#47;RacetoAlaska&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                
+
+              <script type='text/javascript'>
+                var divElement = document.getElementById('viz1522290522252');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if ( divElement.offsetWidth > 800 ) {
+                  vizElement.style.width='1000px';
+                  vizElement.style.height='850px';
+                } else if ( divElement.offsetWidth > 500 ) { 
+                  vizElement.style.width='1000px';
+                  vizElement.style.height='850px';
+                } else { 
+                  vizElement.style.width='100%';
+                  vizElement.style.height='850px';
+                }            
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+            </div>
+          </main>
+        </div>
+
+        <div id="tp-d-recommendation-container">
+          <div class="uk-container">
+            <div class="uk-margin-medium-top uk-margin-bottom" uk-grid>
+              <div class="uk-width-1-3@l">
+                <h4>Explore more of Jane's work</h4>
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz4.png" uk-cover>
+                    </div>
+                    <div class="viz-title">Who Knows Films Better?</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">129 views</span><span class="viz-meta viz-meta-date">1 month ago</span>
+                    </div>
+                  </div>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz3.png" uk-cover>
+                    </div>
+                    <div class="viz-title">How milk nutrition varies depending on</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">3K views</span><span class="viz-meta viz-meta-date">2 weeks ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-3@l">
+                <h4>Recommended visualizations for you</h4>
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz1.png" uk-cover>
+                    </div>
+                    <div class="viz-title">1860 Census Slavery Map</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">38 views</span><span class="viz-meta viz-meta-date">2 months ago</span>
+                    </div>
+                  </div>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz2.png" uk-cover>
+                    </div>
+                    <div class="viz-title">How milk nutrition varies depending on</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">99K views</span><span class="viz-meta viz-meta-date">1 year ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-3@l">
+                <h4>Recommended collections for you</h4>
+                
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                  
+                  <div>
+                    <div class="uk-cover-container collection-recommendation-tile">
+                      <img src="images/coll1.png" uk-cover>
+                      <div class="recommendation-tile-title uk-position-center">#MakeoverMonday</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-cover-container collection-recommendation-tile">
+                      <img src="images/coll2.png" uk-cover>
+                      <div class="recommendation-tile-title uk-position-center">Vizzes of the Day</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-cover-container collection-recommendation-tile">
+                      <img src="images/coll4.png" uk-cover>
+                      <div class="recommendation-tile-title uk-position-center">Greatest Maps</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-cover-container collection-recommendation-tile">
+                      <img src="images/coll3.png" uk-cover>
+                      <div class="recommendation-tile-title uk-position-center">Olympic Games</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="uk-container uk-container-small">
+            <div id="post-interaction-container">
+              <div class="uk-child-width-1-4@s uk-grid-small" uk-grid>
+                <div><button class="tp-button uk-width-1-1 post-interaction-button"><i class="fas fa-lightbulb uk-margin-small-right"></i> Add tip</button></div>
+                <div><button class="tp-button uk-width-1-1 post-interaction-button"><i class="fas fa-question uk-margin-small-right"></i> Ask question</button></div>
+                <div><button class="tp-button uk-width-1-1 post-interaction-button"><i class="fas fa-comments uk-margin-small-right"></i> Post comment</button></div>
+                <div class="text-meta">
+                  We have a be nice policy.<br/>
+                  Please be positive and constructive.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="d-sidebar-container">
+        <div>
+
+          <div id="d-sidebar" class="uk-margin-remove uk-child-width-1-2 uk-child-width-1-1@l" uk-grid="margin:0">
+            <div class="d-sidebar-block">
+              <h1>Race to Alaska</h1>
+              <div id="d-sidebar-stats">
+                <div class="d-sidebar-stat">
+                  <i class="fas fa-eye"></i> 24.736
+                </div>
+                <div class="d-sidebar-stat">
+                  <i class="far fa-thumbs-up"></i> 189
+                </div>
+                <div class="d-sidebar-stat">
+                  <i class="far fa-clock"></i> 4 days ago
+                </div>
+              </div>
+            </div>
+
+            <div class="d-sidebar-block">
+              <p>Anthony Gould visualizes the itinerary of the top 5 teams in the Race to Alaska, a 750-mile (1,207 km) boat race starting in the North of the State of Washington.</p>
+              <p class="d-sidebar-interaction">Hover over a team's name to see their itinerary and speed during the race. The heat map like chart at the bottom right shows the fastest hours of the top 5 teams.</p>
+            </div>
+
+            <div class="d-sidebar-block">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="60" height="60" src="images/avatar.jpg">
+                </div>
+                <div class="uk-width-expand">
+                    <h3>Jane Doe</h3>
+                    <div id="d-sidebar-author-location" class="text-meta">London, United Kingdom</div>
+                    <a href="" class="tp-button tp-button-primary tp-button-sm">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-sidebar-block">
+              <ul id="d-sidebar-labels" class="plain-list">
+                <li class="tp-label">Tableau Zen Master</li>
+                <li class="tp-label">Viz of the Day</li>
+              </ul>
+            </div>
+
+            <div class="d-sidebar-block">
+              <a href="" class="tp-button tp-button-primary tp-button-m tp-button-full-width"><i class="fas fa-thumbs-up uk-margin-small-right"></i> Appreciate viz</a>
+              <a href="" class="tp-button tp-button-secondary tp-button-m tp-button-full-width"><i class="fas fa-star uk-margin-small-right"></i> Bookmark viz</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+<!--
+    <div class="tp-detail-info tp-background-lightgrey uk-padding">
+      <div class="uk-container">
+        <div class="tp-detail-info-sub tp-detail-info-date">1 day ago</div>
+        <h1>Race to Alaska</h1>
+        <div class="tp-detail-info-sub">
+          <span class="tp-detail-info-author-line">Created by <a href="#" class="tp-detail-info-author">Michael Oppermann</a></span>
+          <span class="tp-detail-info"><i class="fas fa-eye"></i> 24.735</span>
+          <span class="tp-detail-info"><i class="fas fa-star"></i> 39</span>
+        </div>
+      </div>
+    </div>
+-->
+
+    <div class="tp-curtain" aria-hidden="true" hidden></div>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+

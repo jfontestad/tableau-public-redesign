@@ -1,0 +1,24 @@
+{% load static %}
+
+{% block gallery_header %}
+<div id="tp-results-header-secondary">
+  <div uk-form-custom="target: > * > span:first-child" class="tp-results-header-secondary-item">
+    Sort by:
+    <select id="gallery-sort">
+      <option value="score">Relevance</option>
+      <option value="last_saved">Upload date</option>
+      <option value="views">Number of views</option>
+      <option value="likes" disabled>Number of likes</option>
+    </select>
+    <span class="uk-link">
+      <span id="gallery-sort-label">Relevance</span>
+    </span>
+  </div>
+  <div class="tp-results-header-secondary-item">
+    Display: 
+    <span class="tp-results-header-secondary-icon gallery-display active" data-display="grid"><i class="fas fa-th"></i></span>
+    <span class="tp-results-header-secondary-icon gallery-display" data-display="list"><i class="fas fa-bars"></i></span>
+  </div>
+  <div class="tp-results-header-secondary-item" id="gallery-result-stats"></div>
+</div>
+{% endblock gallery_header %}

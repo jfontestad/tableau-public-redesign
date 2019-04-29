@@ -1,0 +1,71 @@
+
+{% extends 'gallery/base.html' %}
+
+{% load static %}
+
+
+{% block body_class %}page-{{ page }}{% endblock body_class %}
+
+
+{% block content %}
+
+<div class="uk-grid-collapse" uk-grid>
+  <div id="d-sidebar-container" class="tp-background-lightgrey">
+
+      <div id="d-sidebar">
+
+        {% include "gallery/components/filter.html" %}
+
+        <div class="d-sidebar-block d-sidebar-block-full">
+          <div class="sidebar-block-header d-sidebar-block-header-padding">
+            <span class="sidebar-block-title">CREATORS</span>
+            <a href="" class="tp-button tp-button-secondary tp-button-xs">SHOW MORE</a>
+          </div>
+          <div id="gallery-authors"></div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="uk-width-1-1 uk-width-expand@l" uk-height-viewport="offset-top: true">
+
+    <div id="tp-results-header-primary">
+      <div uk-grid>
+        <div class="uk-width-1-2">
+          <div class="uk-position-relative tp-search-field">
+            <span class="uk-form-icon" uk-icon="icon: search; ratio: 0.8"></span>
+            <a class="uk-form-icon uk-form-icon-flip tp-reset-input-icon" id="tp-clear-results-search" href="#" uk-icon="icon: close; ratio: 0.5"></a>
+            <input class="uk-input uk-form search-field" id="tp-results-search" type="text">
+          </div>
+        </div>
+        <!--
+        <div class="uk-width-1-2">
+          <ul class="uk-flex-right tp-result-tabs" uk-tab>
+            <li class="uk-active"><a href="#">Visualizations <span class="uk-badge-basic">619</span></a></li>
+            <li><a href="#">Authors <span class="uk-badge-basic">4</span></a></li>
+            <li><a href="#">Resources <span class="uk-badge-basic">7</span></a></li>
+          </ul>
+        </div>
+        -->
+      </div>
+    </div>
+
+    {% include "gallery/components/galleryHeader.html" %}
+
+    <div>
+      <div id="spinner-container" style="position:fixed;top:50%;left:50%"></div>
+      <div id="gallery">
+      </div>
+    </div>       
+    
+  </div>
+</div>
+
+{% endblock content %}
+
+    
+{% block extra_footer_js %}
+  <script src="{% static '/js/galleryView.js' %}"></script>
+  <script src="{% static '/js/search.js' %}"></script>
+{% endblock extra_footer_js %}

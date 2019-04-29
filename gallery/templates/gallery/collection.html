@@ -1,0 +1,59 @@
+
+{% extends 'gallery/base.html' %}
+
+{% load static %}
+
+
+{% block body_class %}page-{{ page }}{% endblock body_class %}
+
+
+{% block content %}
+
+<div class="uk-grid-collapse" uk-grid>
+  <div id="d-sidebar-container" class="tp-background-lightgrey">
+
+      <div id="d-sidebar">
+
+        <div class="d-sidebar-block">
+          <div class="sidebar-block-header">
+            <span class="sidebar-block-title">COLLECTION</span>
+            <a href="/collection/" class="tp-button tp-button-secondary tp-button-xs">Other collections</a>
+          </div>
+          <h1 id="collection-title"></h1>
+          <p id="collection-description"></p>
+        </div>
+
+        {% include "gallery/components/filter.html" %}
+
+        <div class="d-sidebar-block d-sidebar-block-full">
+          <div class="sidebar-block-header d-sidebar-block-header-padding">
+            <span class="sidebar-block-title">CREATORS</span>
+            <a href="" class="tp-button tp-button-secondary tp-button-xs">SHOW MORE</a>
+          </div>
+          <div id="gallery-authors"></div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="uk-width-1-1 uk-width-expand@l" uk-height-viewport="offset-top: true">
+
+    {% include "gallery/components/galleryHeader.html" %}
+
+    <div>
+      <div id="spinner-container" style="position:fixed;top:50%;left:50%"></div>
+      <div id="gallery">
+      </div>
+    </div>       
+    
+  </div>
+</div>
+
+{% endblock content %}
+
+    
+{% block extra_footer_js %}
+  <script src="{% static '/js/galleryView.js' %}"></script>
+  <script src="{% static '/js/collection.js' %}"></script>
+{% endblock extra_footer_js %}

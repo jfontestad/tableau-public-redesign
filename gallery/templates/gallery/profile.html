@@ -1,0 +1,86 @@
+
+{% extends 'gallery/base.html' %}
+
+{% load static %}
+
+
+{% block body_class %}page-{{ page }}{% endblock body_class %}
+
+
+{% block content %}
+
+<div class="uk-grid-collapse" uk-grid>
+  <div id="d-sidebar-container" class="tp-background-lightgrey">
+
+      <div id="d-sidebar">
+
+        <div class="d-sidebar-block uk-text-center">
+          <div class="uk-border-circle" id="profile-avatar"></div>
+          <h1 id="profile-name"></h1>
+          <div class="profile-meta" id="profile-organization"></div>
+          <div class="profile-meta" id="profile-location"></div>
+        </div>
+
+        <div class="d-sidebar-block">
+          <ul id="profile-stats"></ul>
+        </div>
+
+        <div class="d-sidebar-block" id="profile-bio">
+        </div>
+
+        <div class="d-sidebar-block d-sidebar-block-full">
+          <div class="sidebar-block-header d-sidebar-block-header-padding">
+            <span class="sidebar-block-title">ELSEWHERE</span>
+          </div>
+          <div class="sidebar-link-list">
+            <a id="profile-website" href="">
+              <div><div class="uk-grid-collapse" uk-grid>
+                <div class="sidebar-link-list-icon"><span class="fas fa-link"></span></div>
+                <div class="uk-width-expand" id="profile-website-formatted"></div>
+              </div></div>
+            </a>
+            <a id="profile-twitter" href="">
+              <div><div class="uk-grid-collapse" uk-grid>
+                <div class="sidebar-link-list-icon"><span class="fab fa-twitter"></span></div>
+                <div class="uk-width-expand">Twitter</div>
+              </div></div>
+            </a>
+            <a id="profile-linkedin" href="">
+              <div><div class="uk-grid-collapse" uk-grid>
+                <div class="sidebar-link-list-icon"><span class="fab fa-linkedin-in"></span></div>
+                <div class="uk-width-expand">LinkedIn</div>
+              </div></div>
+            </a>
+            <a id="profile-facebook" href="">
+              <div><div class="uk-grid-collapse" uk-grid>
+                <div class="sidebar-link-list-icon"><span class="fab fa-facebook-f"></span></div>
+                <div class="uk-width-expand">Facebook</div>
+              </div></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="uk-width-1-1 uk-width-expand@l" uk-height-viewport="offset-top: true">
+
+    {% include "gallery/components/galleryHeader.html" %}
+
+    <div>
+      <div id="gallery">
+        adsfsdf
+      </div>
+    </div>       
+    
+  </div>
+</div>
+
+{% endblock content %}
+
+    
+{% block extra_footer_js %}
+  <script src="{% static '/js/galleryView.js' %}"></script>
+  <script src="{% static '/js/profile.js' %}"></script>
+{% endblock extra_footer_js %}

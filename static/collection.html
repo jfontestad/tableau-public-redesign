@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="<!-- static 'sbs/images/sbs-icon.ico' -->">
+
+    <title>Tableau Public</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="page-collection">
+
+    <header>
+      <div uk-sticky>
+        <nav class="uk-navbar-container uk-navbar-transparent tp-navbar-container-first uk-visible@m" uk-navbar="dropbar: true">
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a>
+                    Tableau Products &amp; Services 
+                    <span class="uk-margin-tiny-left" uk-icon="icon: triangle-down; ratio: 0.7"></span>
+                  </a>
+                  <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
+                    <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Products</li>
+                          <li><a href="#">Tableau Desktop</a></li>
+                          <li><a href="#">Tableau Server</a></li>
+                          <li><a href="#">Tableau Online</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Solutions</li>
+                          <li><a href="#">Industries</a></li>
+                          <li><a href="#">Departments</a></li>
+                          <li><a href="#">Technology</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">About</li>
+                          <li><a href="#">Mission</a></li>
+                          <li><a href="#">Leadership</a></li>
+                          <li><a href="#">Newsroom</a></li>
+                          <li><a href="#">Careers</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="tp-navbar-promoted">
+                    Placeholder for the latest <span class="tp-navbar-promoted-highlighted">news</span> 
+                  </a>
+                </li>
+              </ul>
+              
+              
+            </div>
+            <div class="uk-navbar-right">
+              <a class="uk-navbar-item">Sign in</a>
+            </div>
+        </nav>
+        <nav class="uk-navbar-container uk-navbar-transparent tp-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+            <a class="uk-navbar-item uk-logo uk-visible@m" href="/sbs/"><img src="images/tp-logo-col.png" title="Tableau Public" /></a>
+          </div>
+          <div class="uk-navbar-center uk-hidden@m">
+            <a class="uk-navbar-item uk-logo" href="/sbs/"><img src="images/tp-logo-col.png" title="Tableau Public" /></a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li>
+                  <a href="#">Discover</a>
+                  <div class="uk-navbar-dropdown" uk-dropdown="offset: 0; pos: bottom-justify">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Most popular</span>
+                            <span class="tp-nav-dropdown-desc">Trending and most viewed</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Topics</span>
+                            <span class="tp-nav-dropdown-desc">Explore Tableau visualizations by topic</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Authors</span>
+                            <span class="tp-nav-dropdown-desc">Follow and support Tableau experts</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Around the globe</span>
+                            <span class="tp-nav-dropdown-desc">Browse through Tableau Public geographically</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Surprise me!</span>
+                            <span class="tp-nav-dropdown-desc">Recommended visualizations</span>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">App</a>
+                </li>
+                <li>
+                  <a href="#">Resources</a>
+                  <div class="uk-navbar-dropdown" uk-dropdown="offset: 0; pos: bottom-justify">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Videos</span>
+                            <span class="tp-nav-dropdown-desc">Our how-to videos help get you started, or take you to the next level</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Live training</span>
+                            <span class="tp-nav-dropdown-desc">Sign up for a free webinar</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Sample data</span>
+                            <span class="tp-nav-dropdown-desc">Well-structured datasets from various domains</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="tp-nav-dropdown-title">Tableau Community</span>
+                            <span class="tp-nav-dropdown-desc">Learn, connect, and enjoy Tableau with over 150,000 passionate users</span>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <!--<li>
+                  <a href="#" class="tp-nav-login"><span class="tp-nav-login-inner">Log In</span></a>
+                </li>-->
+            </ul>
+            <a href="#" class="tp-search-toggle" uk-toggle="target: #tp-search, .tp-curtain; animation: uk-animation-fade">
+              <span class="uk-icon uk-margin-small-right" uk-icon="icon: search; ratio: 1.3"></span>
+            </a>
+          </div>
+
+          <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header">Discover Visualizations</li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bolt"></span> Most popular</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Topics</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> Authors</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Around the globe</a></li>
+                <li class="uk-nav-header">Tableau Public</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Download app</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="uk-parent">
+                  <a href="#">Resources</a>
+                  <ul class="uk-nav-sub">
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Live training</a></li>
+                    <li><a href="#">Sample data</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div id="tp-search-outer">
+        <div class="tp-search-container" id="tp-search" aria-hidden="true" hidden>
+          
+          <div class="uk-container uk-container-small" id="tp-search-inner">
+            <div class="uk-padding uk-grid-small uk-flex-middle uk-grid" uk-grid="">
+              <div class="uk-width-expand uk-first-column">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                  <input id="tp-primary-search" class="uk-form-large uk-search-input" type="search" placeholder="Search Tableau Public ..." autofocus="">
+                  <!--<div class="tp-search-suggest" uk-dropdown="offset: 40">
+                    <ul class="uk-nav uk-nav-search">
+                      <li><a href="#">first result</a></li>
+                      <li><a href="#">second item</a></li>
+                      <li><a href="#">third item</a></li>
+                      <li><a href="#">fourth item</a></li>
+                      <li><a href="#">fifth item</a></li>
+                    </ul>
+                  </div>-->
+                </form>
+              </div>
+              <div class="uk-width-auto">
+                <a href="#" class="tp-search-close" uk-toggle="target: #tp-search, .tp-curtain; animation: uk-animation-fade" uk-icon="icon: close"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="uk-grid-collapse" uk-grid>
+      <div id="d-sidebar-container" class="tp-background-lightgrey">
+
+          <div id="d-sidebar">
+
+            <div class="d-sidebar-block">
+              <div class="sidebar-block-header">
+                <span class="sidebar-block-title">COLLECTION</span>
+                <a href="" class="tp-button tp-button-secondary tp-button-xs">Other collections</a>
+              </div>
+              <h1>Makeover Monday</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+
+            <div class="sidebar-accordion-block-header">
+              <span class="sidebar-block-title">REFINE BY</span>
+            </div>
+
+            <ul class="tp-filter-accordion" uk-accordion>
+              <li>
+                <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+                  <span class="far fa-calendar-alt uk-margin-small-right"></span>
+                  <span class="tp-filter-accordion-title-inner">Upload date</span>
+                </a>
+                <div class="uk-accordion-content tp-filter-accordion-content">upload date</div>
+              </li>
+              <li>
+                <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+                  <span class="far fa-thumbs-up uk-margin-small-right"></span>
+                  <span class="tp-filter-accordion-title-inner">Number of likes and views</span>
+                </a>
+                <div class="uk-accordion-content tp-filter-accordion-content">likes and views</div>
+              </li>
+              <li id="tp-filter-chart-types">
+                <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+                  <span class="fas fa-chart-area uk-margin-small-right"></span>
+                  <span class="tp-filter-accordion-title-inner">Chart types</span>
+                </a>
+                <div class="uk-accordion-content tp-filter-accordion-content">
+                  <div class="uk-child-width-1-3 uk-grid-small" uk-grid>
+                    <div><img src="images/tp-chart-type_bar.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_line.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_area.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_pie.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_scatter.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_map.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_table.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_treemap.png" class="tp-filter-chart-type-image active" /></div>
+                    <div><img src="images/tp-chart-type_bubble.png" class="tp-filter-chart-type-image active" /></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+                  <span class="fas fa-sliders-h uk-margin-small-right"></span>
+                  <span class="tp-filter-accordion-title-inner">Visualization features</span>
+                </a>
+                <div class="uk-accordion-content tp-filter-accordion-content">vis features</div>
+              </li>
+              <li>
+                <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+                  <span class="fas fa-bookmark uk-margin-small-right"></span>
+                  <span class="tp-filter-accordion-title-inner">Labels</span>
+                </a>
+                <div class="uk-accordion-content tp-filter-accordion-content">labels</div>
+              </li>
+              <li>
+                <a class="uk-accordion-title tp-filter-accordion-title" href="#">
+                  <span class="fas fa-bars uk-margin-small-right"></span>
+                  <span class="tp-filter-accordion-title-inner">Other</span>
+                </a>
+                <div class="uk-accordion-content tp-filter-accordion-content">
+                  <div class="uk-margin-small">
+                    <label>
+                      <input class="uk-checkbox" type="checkbox" checked>
+                      <span class="checkbox-label uk-margin-small-left">Downloadable data</span>
+                    </label>
+                  </div>
+                  <div class="uk-margin-small">
+                    <label>
+                      <input class="uk-checkbox" type="checkbox" checked>
+                      <span class="checkbox-label uk-margin-small-left">Live data</span>
+                    </label>
+                  </div>
+                  <div class="uk-margin-small">
+                    <label>
+                      <input class="uk-checkbox" type="checkbox" checked>
+                      <span class="checkbox-label uk-margin-small-left">Works on mobile devices</span>
+                    </label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="d-sidebar-block">
+              <div class="sidebar-block-header">
+                <span class="sidebar-block-title">CREATORS</span>
+                <a href="" class="tp-button tp-button-secondary tp-button-xs">SHOW MORE</a>
+              </div>
+              <div id="gallery-authors"></div>
+            </div>
+
+          </div>
+
+      </div>
+
+      <div class="uk-width-1-1 uk-width-expand@l" uk-height-viewport="offset-top: true">
+
+        <div id="tp-results-header-secondary">
+          <div uk-form-custom="target: > * > span:first-child" class="tp-results-header-secondary-item">
+            Sort by:
+            <select id="discover-sort">
+              <option value="relevance">Relevance</option>
+              <option value="space_type">Upload date</option>
+              <option value="views">Number of views</option>
+              <option value="likes">Number of likes</option>
+            </select>
+            <span class="uk-link">
+              <span>Relevance</span>
+            </span>
+          </div>
+          <div class="tp-results-header-secondary-item">
+            Display: 
+            <span class="uk-link tp-results-header-secondary-icon"><i class="fas fa-bars"></i></span>
+            <span class="tp-results-header-secondary-icon"><i class="fas fa-th"></i></span>
+          </div>
+        </div>
+
+        <div>
+          <div class="uk-container">
+            <div class="uk-child-width-1-4 uk-grid-small" uk-grid>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz4.png" uk-cover>
+                </div>
+                <div class="viz-title vis-title">Who Knows Films Better?</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">John Doe</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">129 views</span>
+                  <span class="viz-meta viz-meta-date">1 month ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz2.png" uk-cover>
+                </div>
+                <div class="viz-title vis-title">How milk nutrition varies depending on season</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">Sarah Parker</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">99K views</span>
+                  <span class="viz-meta viz-meta-date">1 year ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz1.png" uk-cover>
+                </div>
+                <div class="viz-title vis-title">1860 Census Slavery Map</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">Jane Doe</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">38 views</span>
+                  <span class="viz-meta viz-meta-date">2 months ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz3.png" uk-cover>
+                </div>
+                <div class="viz-title">How milk nutrition varies depending on season</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">Lena Meyer</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">3K views</span>
+                  <span class="viz-meta viz-meta-date">2 weeks ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz5.png" uk-cover>
+                </div>
+                <div class="viz-title vis-title">The Toughest Places for a Girl to Get an Education 2017</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">Johnny Appleseed</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">129 views</span>
+                  <span class="viz-meta viz-meta-date">1 month ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz6.png" uk-cover>
+                </div>
+                <div class="viz-title vis-title">Female Nobel Laureates</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">Baby Doe</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">18K views</span>
+                  <span class="viz-meta viz-meta-date">2 years ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz7.png" uk-cover>
+                </div>
+                <div class="viz-title vis-title">Voting and Employment in Italy</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">J. Random User</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">3K views</span>
+                  <span class="viz-meta viz-meta-date">3 weeks ago</span>
+                </div>
+              </div>
+              <div class="viz-result-item viz-result-item-tiles">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz8.png" uk-cover>
+                </div>
+                <div class="viz-title">Black Girl Magic</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author" href="#">Jane Appleseed</a>
+                </div>
+                <div class="viz-meta-line text-meta">
+                  <span class="viz-meta viz-meta-views">640 views</span>
+                  <span class="viz-meta viz-meta-date">1 day ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br/><br/>
+
+        <div>
+          <div class="uk-container">
+            <div class="viz-result-item viz-result-item-list" uk-grid>
+              <div class="uk-width-1-4">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz4.png" uk-cover>
+                </div>
+              </div>
+              <div class="uk-width-3-4">
+                <div class="viz-title">Who Knows Films Better?</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author">Jane Appleseed</a>
+                  <span class="viz-meta viz-meta-views">129 views</span>
+                  <span class="viz-meta viz-meta-date">1 month ago</span>
+                </div>
+                <div class="viz-desc">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                </div>
+                <ul class="viz-labels plain-list">
+                  <li class="tp-label">Viz of the Day</li>
+                  <li class="tp-label">Zen Master</li>
+                </ul>
+              </div>
+            </div>
+            <div class="viz-result-item viz-result-item-list" uk-grid>
+              <div class="uk-width-1-4">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz2.png" uk-cover>
+                </div>
+              </div>
+              <div class="uk-width-3-4">
+                <div class="viz-title vis-title">How milk nutrition varies depending on season</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author">John Doe</a>
+                  <span class="viz-meta viz-meta-views">99K views</span>
+                  <span class="viz-meta viz-meta-date">1 year ago</span>
+                </div>
+                <div class="viz-desc">
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo ...
+                </div>
+              </div>
+            </div>
+            <div class="viz-result-item viz-result-item-list" uk-grid>
+              <div class="uk-width-1-4">
+                <div class="uk-cover-container uk-height-small">
+                  <img src="images/viz1.png" uk-cover>
+                </div>
+              </div>
+              <div class="uk-width-3-4">
+                <div class="viz-title vis-title">1860 Census Slavery Map</div>
+                <div class="viz-meta-line text-meta">
+                  <a class="viz-meta viz-meta-author">Jane Doe</a>
+                  <span class="viz-meta viz-meta-views">38 views</span>
+                  <span class="viz-meta viz-meta-date">2 months ago</span>
+                </div>
+                <div class="viz-desc">
+                  Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
+                </div>
+                <ul class="viz-labels plain-list">
+                  <li class="tp-label">Viz of the Day</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>        
+        
+        <div>
+          <div class="uk-container">
+            <div class="uk-margin-medium-top uk-margin-bottom" uk-grid>
+              <div class="uk-width-1-3@l">
+                <h4>Explore more of Jane's work</h4>
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz4.png" uk-cover>
+                    </div>
+                    <div class="viz-title">Who Knows Films Better?</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">129 views</span><span class="viz-meta viz-meta-date">1 month ago</span>
+                    </div>
+                  </div>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz3.png" uk-cover>
+                    </div>
+                    <div class="viz-title">How milk nutrition varies depending on season</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">3K views</span><span class="viz-meta viz-meta-date">2 weeks ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-3@l">
+                <h4>Recommended visualizations for you</h4>
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz1.png" uk-cover>
+                    </div>
+                    <div class="viz-title">1860 Census Slavery Map</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">38 views</span><span class="viz-meta viz-meta-date">2 months ago</span>
+                    </div>
+                  </div>
+                  <div class="viz-recommendation">
+                    <div class="uk-cover-container uk-margin-small-bottom uk-height-small">
+                      <img src="images/viz2.png" uk-cover>
+                    </div>
+                    <div class="viz-title">How milk nutrition varies depending on season</div>
+                    <div class="viz-meta-line text-meta">
+                      <span class="viz-meta viz-meta-views">99K views</span><span class="viz-meta viz-meta-date">1 year ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-3@l">
+                <h4>Recommended collections for you</h4>
+                
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                  
+                  <div>
+                    <div class="collection-recommendation-tile">
+                      <div class="recommendation-tile-title uk-position-center">#MakeoverMonday</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="collection-recommendation-tile">
+                      <div class="recommendation-tile-title uk-position-center">Vizzes of the Day</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="collection-recommendation-tile">
+                      <div class="recommendation-tile-title uk-position-center">Greatest Maps</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="collection-recommendation-tile">
+                      <div class="recommendation-tile-title uk-position-center">Olympic Games</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tp-curtain" aria-hidden="true" hidden></div>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+    <script src="js/libs.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+

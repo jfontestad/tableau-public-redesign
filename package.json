@@ -1,0 +1,27 @@
+{
+  "name": "tableau-public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^1.5.2",
+    "d3": "^4.13.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "leaflet": "^1.3.1",
+    "merge-stream": "^1.0.1",
+    "moment": "^2.22.0",
+    "spin.js": "^4.0.0",
+    "uikit": "^3.0.0-beta.35"
+  }
+}

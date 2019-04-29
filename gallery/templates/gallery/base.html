@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="icon" href="{% static '/images/sbs-icon.ico' %}">-->
+
+    <title>{% block site_title %} {{ APP_TITLE }} {% endblock site_title %}</title>
+
+    {% block extra_head_top %}{% endblock extra_head_top %}
+
+    {% block google_fonts %}
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    {% endblock google_fonts %}
+
+    {% block head_css %}
+      <link href="{% static '/css/style.css' %}" rel="stylesheet">
+    {% endblock head_css %}
+
+     {% block extra_head_bottom %}{% endblock extra_head_bottom %}
+  </head>
+  <body class="{% block body_class %}{% endblock body_class %}" id="{% block body_id %}{% endblock body_id%}">
+
+    {% block header_wrapper %}
+      <header>
+        {% block header %}
+          {% include "gallery/components/navigation.html" %}
+        {% endblock header %}
+      </header>
+    {% endblock header_wrapper %}
+
+    {% block content_wrapper %}
+      <main id="content" role="main">
+        {% block content %}{% endblock content %}
+      </main>
+    {% endblock content_wrapper %}
+    
+    <div id="copyright-footer">
+      <a href="#" target="_blank">DFP Project</a>
+      <span class="copyright-footer-divider">|</span>
+      <a href="#" target="_blank">UBC</a>
+    </div>
+  
+    <div class="tp-curtain" aria-hidden="true" hidden></div>
+
+    {% block footer_js %}
+      <script src="{% static '/js/libs.js' %}"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+      <script src="{% static '/js/helper.js' %}"></script>
+      <script src="{% static '/js/jquery-ui.min.js' %}"></script>
+      <script src="{% static '/js/main.js' %}"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    {% endblock footer_js %}
+    
+    {% block extra_footer_js %}
+    {% endblock extra_footer_js %}
+
+  </body>
+</html>
